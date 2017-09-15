@@ -1,0 +1,14 @@
+
+<div class="container">
+	<%= form_tag({controller: "monitor", action: "index"}, method: "get", class: "form-signin" ) do %>
+		<div class="img-form-signin">
+			<%= image_tag "logo_resize.jpg" %>
+		</div>
+		<%= label_tag(:inputUser, "Usuario:", class: "sr-only", :for => "inputUser") %>
+		<%= text_field_tag(:inputUser, "", class: 'form-control', id:"inputUser", placeholder:"Usuario", required:"", autofocus:"") %>
+		<%= label_tag(:inputPassword, "Clave:", class: "sr-only", :for => "inputPassword") %>
+		<%= text_field_tag(:inputPassword, "", type: "password", class: 'form-control', id:"inputPassword", placeholder:"Clave", required:"") %>
+		
+		<%= submit_tag("Ingresar", class: "btn btn-lg btn-primary btn-block") %>
+	<% end %>
+</div> <!-- /container -->

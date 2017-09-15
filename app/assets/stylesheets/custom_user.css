@@ -1,0 +1,14 @@
+.mod-link a{
+	text-decoration: underline;
+}
+.h1-margin {
+	margin: 0px;
+}
+
+.form-inline {
+	display: inline;
+}
+
+#create_user{
+	display: inline;
+}
